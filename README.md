@@ -7,8 +7,8 @@ that have been constructed using non-distributional information. This lexical
 information has been collected from different linguistic lexicons constrcuted
 over time in NLP research. For more details please refer to the paper.
 
-### Information about the data
-1. binary-vectors.txt.gz
+### Data and Tools
+####binary-vectors.txt.gz
 
 This is a word vector file which is very high dimensional and is 99.9% sparse.
 It contains binary vectors i.e, every word vector has only 1 or 0 as elements.
@@ -19,7 +19,7 @@ Example vector:-
 
 ```the 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 ...``` 
 
-2. word-feat.txt
+####word-feat.txt
 
 Every line of this file contains a word followed by all the features that the
 word possesses as collected from the group of lexicons in lexicons/ folder.
@@ -29,7 +29,7 @@ Example vector:-
 
 ```untrustworthiness wn_noun.attribute noun,negative```
 
-3. create-vector.py
+####create-vector.py
 
 This script takes a lexicon and converts it into a binary vector. We have created
 binary-vectors.txt.gz using this script from all the files in lexicon/ folder. If
@@ -41,7 +41,7 @@ We created binary-vectors.txt using the following command:-
 
 ```python create-vector.py < <(cat lexicons/*) > binary-vectors.txt```
 
-4. lexicons/
+####lexicons/
 
 Every file in this directory is a lexicon containing the word and the features that
 it possesses.
