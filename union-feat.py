@@ -31,9 +31,7 @@ for word in vectors:
   active += len(vectors[word])
 print >> sys.stderr, "Sparsity:", 100 * (1 - active/(len(all_feat)*len(vectors)))
 
-# Convert the dictionary into vectors
+# Print the vectors in the following format:
+# word active_feat1 active_feat2 ...
 for word in vectors:
-  vector = len(all_feat)*['0']
-  for feat in vectors[word]:
-    vector[all_feat[feat]] = '1'
-  print word, " ".join(vector)
+  print word, " ".join(vectors[word])
