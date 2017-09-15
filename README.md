@@ -1,5 +1,5 @@
 # non-distributional
-Manaal Faruqui, mfaruqui@cs.cmu.edu
+Manaal Faruqui, manaalfar@gmail.com
 
 This repository contains data released with the paper on non-distributional
 word vector representation (Faruqui & Dyer, 2015). We provide here word vectors
